@@ -1,0 +1,110 @@
+<Boletin_Consolidado><Boletin>
+  <Numero V="0071"/>
+  <Boletin_Departamental V="0012"/>
+  <Tipo_Boletin V="DEPARTAMENTAL"/>
+  <Desc_Corporacion V="PRESIDENTE"/>
+  <Departamento V="01"/>
+  <Desc_Departamento V="ANTIOQUIA"/>
+  <Municipio V="004"/>
+  <Desc_Municipio V="ABEJORRAL"/>
+  <Dia V="5"/>
+  <Mes V="5"/>
+  <Anio V="2018"/>
+  <Hora V="19"/>
+  <Minuto V="34"/>
+  <Seg V="15"/>
+  <Mesas_Instaladas V="47"/>
+  <Mesas_Informadas V="47"/>
+  <Porc_Mesas_Informadas V="100.00"/>
+  <Potencial_Sufragantes V="15345"/>
+  <Total_Sufragantes V="15345"/>
+  <Porc_Sufragantes V="100.00"/>
+  <Votos_Nulos V="297"/>
+  <Porc_Votos_Nulos V="001.93"/>
+  <Votos_No_Marcados V="426"/>
+  <Porc_Votos_No_Marcados V="002.77"/>
+  <Detalle_Circunscripcion>
+    <lin>
+      <Circunscripcion V="0"/>
+      <Desc_Circunscripcion V="NACIONAL"/>
+      <Numero_Curules V="0"/>
+      <Detalle_Partido_Totales>
+        <lin>
+          <Partido V="995"/>
+          <Descripcion V="VOTOS POR LISTA O PARTIDO"/>
+          <Votos V="14495"/>
+          <Porc V="099.13"/>
+        </lin>
+        <lin>
+          <Partido V="996"/>
+          <Descripcion V="VOTOS EN BLANCO"/>
+          <Votos V="127"/>
+          <Porc V="000.86"/>
+        </lin>
+        <lin>
+          <Partido V="999"/>
+          <Descripcion V="VOTOS VALIDOS"/>
+          <Votos V="14622"/>
+          <Porc V="095.28"/>
+        </lin>
+      </Detalle_Partido_Totales>
+      <Detalle_Candidato>
+        <lin>
+          <Candidato V="003"/>
+          <Votos V="2008"/>
+          <Porc V="013.73"/>
+          <Partido V="012"/>
+        </lin>
+        <lin>
+          <Candidato V="005"/>
+          <Votos V="1878"/>
+          <Porc V="012.84"/>
+          <Partido V="016"/>
+        </lin>
+        <lin>
+          <Candidato V="004"/>
+          <Votos V="1790"/>
+          <Porc V="012.24"/>
+          <Partido V="025"/>
+        </lin>
+        <lin>
+          <Candidato V="007"/>
+          <Votos V="1710"/>
+          <Porc V="011.69"/>
+          <Partido V="014"/>
+        </lin>
+        <lin>
+          <Candidato V="002"/>
+          <Votos V="1664"/>
+          <Porc V="011.38"/>
+          <Partido V="028"/>
+        </lin>
+        <lin>
+          <Candidato V="008"/>
+          <Votos V="1513"/>
+          <Porc V="010.34"/>
+          <Partido V="022"/>
+        </lin>
+        <lin>
+          <Candidato V="006"/>
+          <Votos V="1503"/>
+          <Porc V="010.27"/>
+          <Partido V="026"/>
+        </lin>
+        <lin>
+          <Candidato V="001"/>
+          <Votos V="1272"/>
+          <Porc V="008.69"/>
+          <Partido V="029"/>
+        </lin>
+        <lin>
+          <Candidato V="009"/>
+          <Votos V="1157"/>
+          <Porc V="007.91"/>
+          <Partido V="027"/>
+        </lin>
+      </Detalle_Candidato>
+    </lin>
+  </Detalle_Circunscripcion>
+</Boletin>
+</Boletin_Consolidado>

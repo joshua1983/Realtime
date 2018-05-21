@@ -5,25 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Elecciones presidencia 2018</title>
-  <script src="/socket.io/socket.io.js"></script>
-<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-  <script>
-    $(function(){
-      var socket = io();
-      socket.emit('mensaje', 'testing message');
-      socket.on('mensaje',function(msg){
-        $("#mensajes").append($('<li>').text(msg));
-      })
-      return false;
-    })
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <script src="/static/js/socket.io.js"></script>
+  <script src="/static/js/jquery-3.3.1.min.js"></script>
+  <script src="/static/js/vue.js"></script>
 
 
-  </script>
 </head>
 <body>
-  <h1>test</h1>
-  <ul id="mensajes">
 
-  </ul>
+  <div id="app">
+
+
+
+  <br>
+  <br>
+  <table class="table">
+    <tr>
+      <td>Fajardo</td>
+      <td>Petro</td>
+      <td>De la calle</td>
+      <td>Duque</td>
+      <td>Vargas</td>
+      <td>Trujillo</td>
+      <td>Voto en blanco</td>
+    </tr>
+    <tr>
+      <td>{{formatVotos(votos_fajardo)}}</td>
+      <td>{{formatVotos(votos_petro)}}</td>
+      <td>{{formatVotos(votos_delacalle)}}</td>
+      <td>{{formatVotos(votos_duque)}}</td>
+      <td>{{formatVotos(votos_vargas)}}</td>
+      <td>{{formatVotos(votos_trujillo)}}</td>
+      <td>{{formatVotos(votos_blanco)}}</td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <table class="table">
+    <tr>
+      <td>Boletin</td>
+      <td>Hora</td>
+      <td>votos en blanco</td>
+      <td>votos Validos</td>
+      <td>votos Nulos</td>
+      <td>tarjetones no marcados</td>
+      <td>mesas inf</td>
+      <td>Sufragantes</td>
+      <td>potencial de Sufragantes</td>
+    </tr>
+    <tr>
+      <td>{{numero_boletin}}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  </div>
 </body>
+<script src="/static/js/main.js"></script>
+<script>
+    var socket = io.connect();
+    socket.emit('mensaje', 'Usuario entrante');
+    socket.on('mensaje',function(msg){
+      var dataJson = JSON.parse(msg);
+      if (dataJson.Boletin_Consolidado != undefined){
+        actualizarVariables(dataJson);
+        console.log(dataJson);
+      }
+    });
+
+
+
+</script>
 </html>
